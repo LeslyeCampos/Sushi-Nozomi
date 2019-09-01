@@ -1,0 +1,305 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+  user-select: none;
+}
+
+.hide{
+ display: none;
+}
+
+header {
+  background-color: black;
+  max-height: 130px;
+  max-width: 100%;
+}
+
+.logo {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  min-width: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+
+#logotipo{
+ height: 90px;
+}
+
+ body {
+    font-family: 'Montserrat', sans-serif, Open Sans;
+    background-attachment: fixed;
+    align-content: center;
+    overflow: hidden;
+    height: calc(103vh - 16px);
+  }
+main {
+ /* display: inline-flex; */
+ justify-content: center;
+ overflow: hidden;
+ width: 100%;
+ background-color: #202020;
+ height: 82%;
+ overflow: auto;
+ /* margin: 0px 0px 0px 0px; */
+ /* font-size: 13px; */
+ padding: 12px;
+ /* justify-content: center; */
+}
+
+ footer{
+  background-color: #000000ab;
+  text-align: center;
+  color: #ffffff;
+  padding: 2px 0;
+  font-size: 13px;
+  z-index: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+header nav {
+  width:100%;
+ height:40px ;
+  margin:0px auto;
+  background:#202020;
+ display: flex;
+ align-items: center;
+}
+
+.menu_bar {
+   display:none;
+  bottom:0px;
+}
+
+header nav ul {
+  overflow:hidden;
+  list-style:none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+
+
+header nav ul li span {
+  margin-right:10px;
+}
+
+header nav ul li a {
+
+ color:#ddd;
+ display:block;
+ text-decoration:none;
+ font-size: 20px;
+ padding: 9px 10px;
+ margin: 0;
+ text-align: left;
+}
+
+header nav ul li a:hover {
+  background:#000;
+}
+
+section {
+  padding:20px;
+}
+
+header nav ul li:hover .children {
+  display:block;
+}
+
+header nav ul li .children {
+ display: none;
+ background:#011826;
+ position: absolute;
+
+ z-index:1000;
+}
+
+header nav ul li .children li {
+ display:block;
+ overflow: hidden;
+ border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+ display: block;
+}
+
+header nav ul li .children li a span {
+ float: right;
+ position: relative;
+ top:3px;
+ margin-right:0;
+ margin-left:10px;
+}
+
+header nav ul li .caret {
+ position: relative;
+ top:3px;
+ margin-left:10px;
+ margin-right:0px;
+}
+
+.img-producto{
+ max-width: 20%;
+}
+
+.info{
+  color: #ddd;
+  /* height: 221%; */
+  /* width: 295px; */
+  /* max-height: 130px; */
+}
+
+@media screen and (max-width:960px ) {
+  header {
+    background-color: black;
+    height: 100px;
+  }
+  main {
+    height: 85%;
+    overflow: hidden;
+    z-index: 0;
+    display: inline-flex;
+    width: 100%;
+    /* text-align: center; */
+    padding: 12px;
+  }
+
+  body {
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif, Open sans-serif;
+    align-content: center;
+    overflow: hidden;
+    height: calc(103vh - 20px);
+  }
+
+  .logo {
+    display: flex;
+    height: 65px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+ #logotipo{
+   height: 65px;
+ }
+  header nav {
+    width:80%;
+    height:35px;
+    left:-100%;
+    position: absolute;
+   z-index: 20;
+   display: block;
+
+  }
+
+ header nav ul {
+   overflow:hidden;
+   list-style:none;
+   background-color: #202020;
+ }
+
+  header nav ul li {
+    display:block;
+    float:none;
+    border-bottom:1px solid rgba(255,255,255, .3);
+  }
+ header nav ul li a {
+   color:#ddd;
+   padding:20px;
+   display:block;
+   text-decoration:none;
+  font-size: 27px;
+  text-align: left;
+ }
+  .menu_bar {
+    display: block;
+    width:100%;
+    background:#ccc;
+  }
+
+  .menu_bar .bt-menu {
+    display:block;
+   height: 40px;
+    padding-bottom:10px;
+   padding-top: 0px;
+    background:#202020;
+    color:white;
+   text-align: right;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:16px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+   position:relative;
+   bottom: 0px;
+
+  }
+
+  .menu_bar span {
+    float:left;
+    font-size:40px;
+    /* margin-left: 15px; */
+    color: #d00000;
+  }
+
+ header nav ul li:hover .children {
+   display: none;
+ }
+
+ header nav ul li .children {
+   width: 100%;
+   position: relative;
+ }
+
+ header nav ul li .children li a {
+   margin-left:20px;
+ }
+
+ header nav ul li .caret {
+   float: right;
+ }
+
+ .img-producto{
+   max-width: 150px;
+ }
+ .info{
+  color: #ddd;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* max-height: 130px; */
+  /* position: absolute; */
+}
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  max-height: 242px;
+  overflow: hidden;
+}
+}
+
+.filtro {
+  left: 1px;
+  position: relative;
+  z-index: 6;
+  padding: 5px;
+  padding-bottom: 5px;
+  height: 35px;
+}
+
+.vista1{z-index: 0;/* color: black; *//* display: inline-block; */justify-content: center;overflow: hidden;/* width: 134%; */background-color: #202020;/* height: 77%; *//* overflow: auto; */margin: 0px;/* font-size: 13px; *//* padding: 12px; */}
